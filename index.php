@@ -1,7 +1,8 @@
 <?php
 // code from https://thisinterestsme.com/php-curl-proxy/
+
 //The URL you want to send a cURL proxy request to.
-$url = 'http://php.net';
+$url = 'http://repaircountry.info/';
 
 //The IP address of the proxy you want to send
 //your request through.
