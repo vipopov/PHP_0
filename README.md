@@ -1,2 +1,5 @@
 # PHP_0
-PHP code
+
+This is PHP website crawler with proxy support
+
+Development started 24.11.2019

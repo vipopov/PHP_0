@@ -1,15 +1,18 @@
 <?php
 // code from https://thisinterestsme.com/php-curl-proxy/
 
+// test url is crawler.salomoon.info
+
 //The URL you want to send a cURL proxy request to.
 $url = 'http://repaircountry.info/';
 
 //The IP address of the proxy you want to send
+// URL from proxy get https://hidemy.name/ua/proxy-list/?maxtime=700#list
 //your request through.
-$proxyIP = '1.2.3.4';
+$proxyIP = '31.186.102.165';
 
 //The port that the proxy is listening on.
-$proxyPort = '1129';
+$proxyPort = '3128';
 
 //The username for authenticating with the proxy.
 $proxyUsername = 'myusername';
@@ -30,7 +33,7 @@ curl_setopt($ch, CURLOPT_PROXY, $proxyIP);
 curl_setopt($ch, CURLOPT_PROXYPORT, $proxyPort);
 
 //Specify the username and password.
-curl_setopt($ch, CURLOPT_PROXYUSERPWD, "$proxyUsername:$proxyPassword");
+//curl_setopt($ch, CURLOPT_PROXYUSERPWD, "$proxyUsername:$proxyPassword");
 
 //Execute the request.
 $output = curl_exec($ch);
