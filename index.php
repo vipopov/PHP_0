@@ -47,6 +47,10 @@
 <div class="dott"></div>
 <div class="dfgdiv gz"><a href="/stat_yest.php">СТАТИСТИКА ЗА ВЧОРА</a></div>
 <div class="dott"></div>
+<div class="dfgdiv gz"><a href="/projects.php">ПРОЕКТИ</a></div>
+<div class="dott"></div>
+<div class="dfgdiv gz"><a href="http://92.118.149.82/phpmyadmin/" target="_blank">phpmyadmin</a></div>
+<div class="dott"></div>
 </div>
 <div class="clear"></div>
 </div><!--/.entry-->
