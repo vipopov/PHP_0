@@ -40,14 +40,31 @@
 <div class="pad group">
 <article class="group post-2 page type-page status-publish hentry">
 <div class="entry themeform">
-	<h2>Існуючі проекти:</h2>
+	
 <?php
 /* 
  * add new pr
  * edit existing proj
  */
 include_once 'config.php';
-include_once 'engine/database.php';
+include_once 'engine/pdo.php';
+function build_a($project){
+	return "<div><a href=\"?project=$project\" target=\"\">$project</a></div>";
+}
+if (filter_input(INPUT_GET, "project")) {
+  // we edit here
+} 
+if (filter_input(INPUT_GET, "new")) {
+  // we create new here
+} 
+if ((!isset($_GET["project"])) and (!isset($_GET["new"]))) {
+	echo "<h2>Існуючі проекти:</h2>";
+	$stmt = $db->query("SELECT `project` FROM `urls` GROUP BY `project` LIMIT 1000");
+	while ($row = $stmt->fetch()){
+		echo build_a($row[0]);
+	}
+}
+
 ?>
 	
 <div class="clear"></div>

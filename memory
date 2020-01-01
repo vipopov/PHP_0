@@ -1,0 +1,10 @@
+libcurl error codes 
+
+https://curl.haxx.se/libcurl/c/libcurl-errors.html
+
+PDO $db->query result same in 2 fields:
+Array
+(
+    [project] => test
+    [0] => test
+)

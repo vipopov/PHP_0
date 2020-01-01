@@ -4,9 +4,9 @@
  */
 class Config {
 	static $DB_HOST = 'localhost';
-	static $DB_USER = 'root';
+	static $DB_USER = '';
 	static $DB_PASSWORD = '';
-	static $DB_NAME = 'pdo';
+	static $DB_NAME = '';
 	static $CHARSET = 'utf8';
 	static $DB_PREFIX = '';
 	
